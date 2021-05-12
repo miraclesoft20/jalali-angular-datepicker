@@ -24,13 +24,23 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 5px;
       display: inline-block;
       direction: ltr;
+      width: 100%;
+
     }
 
-    .dp-calendar-nav-container-left, .dp-calendar-nav-container-right {
+    .dp-calendar-nav-container-left {
+      position: relative;
       display: inline-block;
+      width: 15%;
+      text-align: center;
+    }
+
+    .dp-calendar-nav-container-right {
+      position: relative;
+      display: inline-block;
+      width: 15%;
     }
 
     .dp-calendar-nav-left,
@@ -66,12 +76,10 @@
     }
 
     .dp-nav-header {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 5px;
       display: inline-block;
       font-size: 13px;
+      width: 70%;
+      text-align: center;
     }
 
     .dp-nav-header-btn {

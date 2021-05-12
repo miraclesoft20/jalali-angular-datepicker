@@ -39,7 +39,9 @@
     "farsi"
   ],
   "dependencies": {
-    "jalali-moment": "^3.3.10"
+    "jalali-moment": "^3.3.10",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.4.1"
   },
   "devDependencies": {
     "@angular/cli": "^1.6.1",

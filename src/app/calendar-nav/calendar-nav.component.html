@@ -1,17 +1,4 @@
 <div class="dp-calendar-nav-container">
-  <div class="dp-nav-header">
-    <span [hidden]="isLabelClickable"
-          [attr.data-hidden]="isLabelClickable"
-          [innerText]="label">
-    </span>
-    <button type="button"
-            class="dp-nav-header-btn"
-            [hidden]="!isLabelClickable"
-            [attr.data-hidden]="!isLabelClickable"
-            (click)="labelClicked()"
-            [innerText]="label">
-    </button>
-  </div>
 
   <div class="dp-nav-btns-container">
     <div class="dp-calendar-nav-container-left">
@@ -29,11 +16,25 @@
               (click)="leftNavClicked()">
       </button>
     </div>
-    <button type="button"
-            class="dp-current-location-btn"
-            *ngIf="showGoToCurrent"
-            (click)="onGoToCurrent.emit()">
-    </button>
+
+    <div class="dp-nav-header">
+    <span [hidden]="isLabelClickable"
+          [attr.data-hidden]="isLabelClickable"
+          [innerText]="label">
+    </span>
+      <button type="button"
+              class="dp-nav-header-btn"
+              [hidden]="!isLabelClickable"
+              [attr.data-hidden]="!isLabelClickable"
+              (click)="labelClicked()"
+              [innerText]="label">
+      </button>
+    </div>
+    <!-- <button type="button"
+             class="dp-current-location-btn"
+             *ngIf="showGoToCurrent"
+             (click)="onGoToCurrent.emit()">
+     </button>-->
     <div class="dp-calendar-nav-container-right">
       <button type="button"
               class="dp-calendar-nav-right"
